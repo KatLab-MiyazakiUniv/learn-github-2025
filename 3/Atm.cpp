@@ -14,18 +14,12 @@ ATM::ATM(int init_balance)
 
 void ATM::deposit(int amount)
 {
-      if (amount > 0)
-      {
-            balance += amount;
-      }
+      balance += amount;
 }
 
 void ATM::withdraw(int amount)
 {
-      if (amount > 0 && amount <= balance)
-      {
-            balance -= amount;
-      }
+      balance -= amount;
 }
 
 int ATM::getBalance() const
