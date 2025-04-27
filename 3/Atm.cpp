@@ -1,4 +1,4 @@
-#include "ATM.h"
+#include "Atm.h"
 
 ATM::ATM(int init_bal)
 {
