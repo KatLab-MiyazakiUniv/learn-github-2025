@@ -1,7 +1,7 @@
-class ATM
+class Atm
 {
 public:
-      ATM(int init_balance);
+      Atm(int init_balance);
       void deposit(int amount);
       void withdraw(int amount);
       int getBalance() const;

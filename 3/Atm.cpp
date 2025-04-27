@@ -1,6 +1,6 @@
 #include "Atm.h"
 
-ATM::ATM(int init_balance)
+Atm::Atm(int init_balance)
 {
       if (init_balance >= 0)
       {
@@ -12,17 +12,17 @@ ATM::ATM(int init_balance)
       }
 }
 
-void ATM::deposit(int amount)
+void Atm::deposit(int amount)
 {
       balance += amount;
 }
 
-void ATM::withdraw(int amount)
+void Atm::withdraw(int amount)
 {
       balance -= amount;
 }
 
-int ATM::getBalance() const
+int Atm::getBalance() const
 {
       return balance;
 }
