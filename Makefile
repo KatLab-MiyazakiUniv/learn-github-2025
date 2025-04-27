@@ -10,4 +10,4 @@ build:
 	cd build && cmake .. && make
 
 test: clean build
-	cd build && ctest --output-on-failure
+	cd build && export GTEST_COLOR=1 && ctest --output-on-failure -VV
