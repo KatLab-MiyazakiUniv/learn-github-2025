@@ -1,10 +1,10 @@
 #include "Atm.h"
 
-ATM::ATM(int init_bal)
+ATM::ATM(int init_balance)
 {
-      if (init_bal >= 0)
+      if (init_balance >= 0)
       {
-            balance = init_bal;
+            balance = init_balance;
       }
       else
       {
