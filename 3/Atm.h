@@ -1,5 +1,3 @@
-#include <string.h>
-
 class ATM
 {
 public:
