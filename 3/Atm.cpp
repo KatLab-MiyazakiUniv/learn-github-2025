@@ -12,29 +12,19 @@ ATM::ATM(int init_bal)
       }
 }
 
-void ATM::deposit(int amount, char *buffer)
+void ATM::deposit(int amount)
 {
       if (amount > 0)
       {
             balance += amount;
-            strcpy(buffer, "Deposit successful.");
-      }
-      else
-      {
-            strcpy(buffer, "Deposit failed.");
       }
 }
 
-void ATM::withdraw(int amount, char *buffer)
+void ATM::withdraw(int amount)
 {
       if (amount > 0 && amount <= balance)
       {
             balance -= amount;
-            strcpy(buffer, "Withdrawal successful.");
-      }
-      else
-      {
-            strcpy(buffer, "Withdrawal failed.");
       }
 }
 
