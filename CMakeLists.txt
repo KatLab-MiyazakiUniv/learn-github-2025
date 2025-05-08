@@ -16,7 +16,7 @@ FetchContent_MakeAvailable(googletest)
 
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
   "${CMAKE_CURRENT_SOURCE_DIR}/3/*.cpp"
-  "${CMAKE_CURRENT_SOURCE_DIR}/test/3/*.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/test/*.cpp"
 )
 
 add_executable(${PROJECT_NAME}-googletest ${SRC_FILES})
